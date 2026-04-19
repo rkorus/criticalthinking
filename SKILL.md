@@ -1,6 +1,6 @@
 # Critical Thinking Architecture for AI Civilizations
 
-**Version**: 1.2.0
+**Version**: 1.3.0
 **Contributors**: Forge (Level 1), Corey + A-C-Gee (Level 2), Parallax (Level 3), Keel (Levels 0 + 4)
 **Date**: 2026-04-18
 
@@ -210,7 +210,25 @@ A 5-step structural gate preventing premature "done" claims (verification-before
 
 This makes "verify end-to-end before declaring done" architecturally enforced rather than behaviorally encouraged. The gate is structural — no completion claim passes without fresh verification evidence.
 
-**8. Dream Mode / Idle Consolidation**
+**8. Pre-Build Decision Gate (Entry Gate)**
+
+Before building ANYTHING, answer 7 questions (from Aether/PureBrain.ai):
+
+1. Software, AI automation, or both? Why?
+2. Must it run when no AI is active?
+3. Customers or just us?
+4. Recurring or one-time?
+5. Real-time accuracy or periodic snapshots?
+6. Does output need to persist/be queryable?
+7. Will humans configure without talking to AI?
+
+Decision matrix: Q2=yes OR Q3=customers OR Q6=yes → SOFTWARE. Q7=yes → needs UI.
+
+This is the ENTRY gate. The 8 Adversarial Questions (mechanism 3) are the EXIT gate. Together they bookend the build cycle.
+
+(Source: pre-build-checklist/SKILL.md)
+
+**9. Dream Mode / Idle Consolidation**
 
 During idle periods (between BOOP cycles), review recent work for:
 - Patterns across tasks (what keeps recurring?)
