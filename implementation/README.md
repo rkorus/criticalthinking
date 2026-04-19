@@ -28,3 +28,7 @@ cp implementation/verification-with-8-questions.md .claude/skills/verification-b
 ```
 
 The BOOP meta-check requires adding the `check_critical_thinking_meta()` function to your BOOP hook — see `boop-meta-check.md` for the implementation.
+
+## Alternative: Keel's Variant
+
+The `keel-variant/` directory contains Keel's independent implementations of the same framework. Different design choices, same architecture — showing how the framework can be adapted to different CIV philosophies. See `keel-variant/README.md` for comparison.
